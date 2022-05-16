@@ -6,7 +6,13 @@ Hayool P
 Identification of Code: 
 API for making a request to google: https://developers.google.com/sheets/api/quickstart/java
 
+Phonetic sound install: bin/elasticsearch-plugin install analysis-phonetic
+GET _analyze?filter_path=tokens.token
 
+Soundex: https://en.wikipedia.org/wiki/Soundex
+
+elastic search needed to get phonetic tokens: 
+https://github.com/elastic/elasticsearch/blob/7.13/plugins/analysis-phonetic/src/main/java/org/elasticsearch/index/analysis/PhoneticTokenFilterFactory.java
 
 
 The SiriSLee Segment: 
