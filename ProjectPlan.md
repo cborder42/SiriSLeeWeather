@@ -31,3 +31,5 @@ Recording phonetic keys
 Sending a scanner class and sending results from user to a foreign structure.
 Removing non-key words from the user input string
 Division of Labor: This project will require at least 5 people. Each person can write one method. (shown in #2)
+
+takes in a string and returns text to speech (manually with prerecorded files for each letters) with "a quick brown fox jumps over the lazy dog."
