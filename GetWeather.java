@@ -21,7 +21,9 @@ public class GetWeather
             String line = in.readLine();
             double kelvinTemp = Double.parseDouble(line.substring(line.indexOf("p\":") + 3, line.indexOf(",\"f")));
             int farenheitTemp = (int) ((kelvinTemp - 273.15) * (9/5) + 32);
-            return farenheitTemp;
+            String weatherCondition = line.substring(line.indexOf("on\":\"") + 5, line.indexOf("\",\"i"));
+
+            return "The temperature is " + farenheitTemp + " degrees and the condition is " + weatherCondition;
         }
 
     }
