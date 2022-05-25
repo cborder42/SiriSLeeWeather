@@ -34,3 +34,19 @@ Division of Labor: This project will require at least 5 people. Each person can 
 
 takes in a string and returns text to speech (manually with prerecorded files for each letters) with "a quick brown fox jumps over the lazy dog."
 has a string array with all of the letters of the alphabet. loops through string and finds the corresponding letter and location inside of the array w all the letters of the alphabet. Then finds the file with the letter sound with the same location as the letter found.
+
+The WeatherApp Segment:
+
+A function that pulls json data from the OpenWeather API.
+
+It creates a URLConnection object with the .openConnection() on the api web link
+- This creates a connection to the specified URL
+
+It then creates a BufferedReader object, which simplifies text from a stream of characters. 
+The stream of characters that is supplied is an InputStreamReader, decoding the json and returning the stream
+
+After this process of decoding and simplifying the json, a string variable is created to capture that simplified stream of characters
+
+Once the String variable is created, the temperature value in Kelvin can be turned into a double value using the substring method
+
+This double value is turned into an int value, and returned.
