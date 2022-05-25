@@ -23,7 +23,7 @@ public class GetWeather
             int farenheitTemp = (int) ((kelvinTemp - 273.15) * (9/5) + 32);
             String weatherCondition = line.substring(line.indexOf("on\":\"") + 5, line.indexOf("\",\"i"));
 
-            return "The temperature is " + Integer.toString(farenheitTemp) + " degrees and the condition is " + weatherCondition;
+            return "The temperature is " + String.valueOf(farenheitTemp) + " degrees and the condition is " + weatherCondition;
         }
 
     }
