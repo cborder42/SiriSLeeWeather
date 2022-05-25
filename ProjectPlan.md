@@ -33,3 +33,4 @@ Removing non-key words from the user input string
 Division of Labor: This project will require at least 5 people. Each person can write one method. (shown in #2)
 
 takes in a string and returns text to speech (manually with prerecorded files for each letters) with "a quick brown fox jumps over the lazy dog."
+has a string array with all of the letters of the alphabet. loops through string and finds the corresponding letter and location inside of the array w all the letters of the alphabet. Then finds the file with the letter sound with the same location as the letter found.
