@@ -11,7 +11,7 @@ public class GetWeather
 
     }
 
-    public static int getWeather(String place) throws Exception {
+    public static String getWeather(String place) throws Exception {
         URL url = new URL("https://api.openweathermap.org/data/2.5/weather?q=" + place + "&appid=43eb0b382279761afe085d3c6a5dcfc7");
         URLConnection connection = url.openConnection();
 
