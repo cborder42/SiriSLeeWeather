@@ -48,5 +48,7 @@ The stream of characters that is supplied is an InputStreamReader, decoding the 
 After this process of decoding and simplifying the json, a string variable is created to capture that simplified stream of characters
 
 Once the String variable is created, the temperature value in Kelvin can be turned into a double value using the substring method
+This double value is turned into an int value.
+Other values like humidity, condition can be pulled with the same way.
 
-This double value is turned into an int value, and returned.
+A single string with all of the details will be returned
