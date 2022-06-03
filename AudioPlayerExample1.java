@@ -1,6 +1,8 @@
 import java.io.File;
 import java.io.IOException;
- 
+import java.util.Scanner; 
+import java.util.*;
+
 import javax.sound.sampled.AudioFormat;
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
@@ -86,11 +88,30 @@ public class AudioPlayerExample1 implements LineListener {
         }
  
     }
+
  
     public static void main(String[] args) {
-        String audioFilePath = "CantinaBand3.wav";
-        AudioPlayerExample1 player = new AudioPlayerExample1();
-        player.play(audioFilePath);
-    }
+       String[] alphabet = {"a","b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"};
+       Scanner myObj = new Scanner(System.in); 
+       System.out.println("Enter your word!");
+
+       String word = myObj.nextLine();  
+       
+       
+       word.toLowerCase();
+    
+       for(int i=0;i<word.length();i++){
+         for(int j=0; j<alphabet.length;j++){
+             if (word.substring(i, i+1).equals(alphabet[j])){
+                 String letterPlace=alphabet[j];
+                 String audioFilePath = letterPlace + ".WAV";
+                 AudioPlayerExample1 player = new AudioPlayerExample1();
+                 player.play(audioFilePath);
+                }
  
+}
+}
+}
+       
+       
 }
