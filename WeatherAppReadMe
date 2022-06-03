@@ -1,0 +1,23 @@
+Our weather app consists of two components: Backend API processes, and the graphical interface.
+
+The GetWeather.java file has a function named getWeather that accepts a single String parameter. 
+This parameter allows the user to input a city of their choice.
+This city is added to a string containing the rest of the API weblink.
+Then, a URL object is made with this string/link, and then a connection is established to this URL.
+Then, in a try/catch statement
+The BufferedReader class and the InputStream class is used to read and simplifythe large stream of open data/JSON from the connection to the URL.
+A String variable is then created to contain the whole string of simplified data.
+Using this string variable, we can grab specific values like temperature(Kelvin), the weather condition, the humidity and the wind speed, with substring methods.
+Then, we return a list of strings with these pieces of data, 
+So this data can be used in the GUI.java file - the information can be presented in the graphical interface.
+
+The graphical interface JFrame to create a graphical user interface.
+Multiple instance variables are created to build the whole interface.
+The frame, the Textfield, the labels and the button are defined here.
+The contructor is right under the variables, but it doesn't contain any parameters,
+As an object of the GUI class will be used later to attach an action listener to the city-submit button.
+After all of the labels and add-ons are properly placed in the graphical interface, the actionPerformed method is below.
+This method is triggered when the user clicks the city-submit button.
+This method calls the getWeather function from the other file, and it fills a local array with these returned details
+Then, the labels on the graphical interfact are set to display these individual weather details.
+The user can keep entering in cities to check the weather, as the program does not end after one request.
