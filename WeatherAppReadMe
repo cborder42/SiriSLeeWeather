@@ -23,3 +23,10 @@ Then, the labels on the graphical interfact are set to display these individual 
 The user can keep entering in cities to check the weather, as the program does not end after one request.
 
 On the graphic (called Siri) that we were going to add to the graphical interface, the class Siri is extended from the imported class Jframe.
+Then, the dimensions are made for the JFrame, and it is set as visible. 
+Then, a JPanel is created, using the imported packages. 
+A method is created, which holds the information of the graphics on the screen. It contains rectangles, circles, and round rectangles.
+We make these new graphic objects through what we imported. 
+Afterwards, we set the title to our Jpanel to "Siri Weather"
+In the main method, there is SwingUtilities.invokeLater, which allows the run method to be ran.
+- the siri class sucessfully runs and creates a graphic that looks like a phone, but we were unable to utilize in our weather app. 
