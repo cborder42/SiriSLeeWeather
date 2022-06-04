@@ -21,3 +21,5 @@ This method is triggered when the user clicks the city-submit button.
 This method calls the getWeather function from the other file, and it fills a local array with these returned details
 Then, the labels on the graphical interfact are set to display these individual weather details.
 The user can keep entering in cities to check the weather, as the program does not end after one request.
+
+On the graphic (called Siri) that we were going to add to the graphical interface, the class Siri is extended from the imported class Jframe.
